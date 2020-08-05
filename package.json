@@ -1,0 +1,23 @@
+{
+  "name": "library-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx .",
+    "lint:fix": "yarn lint --fix",
+    "build": "yarn build:dev",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "prepack": "yarn build:prod"
+  },
+  "devDependencies": {
+    "@ekz/packer": "^0.9.0",
+    "typescript": "^3.9.7"
+  }
+}

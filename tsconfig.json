@@ -1,0 +1,12 @@
+{
+    "extends": "./node_modules/@ekz/packer/tsconfig/recommended",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@root/*": [
+                "./src/*"
+            ]
+        },
+        "skipLibCheck": true
+    }
+}
